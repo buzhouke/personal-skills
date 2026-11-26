@@ -1,0 +1,1 @@
+每次收到用户消息，先加载一次 `zh-natural-writing`，再起草回复。普通聊天和简短追问也一样；上一轮读过不算这一轮。优先调用 Skill 工具。如果工具没有返回正文，就直接读本次安装的 `zh-natural-writing/SKILL.md`（在仓库的 `.github/skills/` 或个人的 `~/.copilot/skills/` 下）。本轮已加载则不重复，按用户指定的语言回答，不必额外报告加载过程。
